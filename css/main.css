@@ -46,6 +46,11 @@
 2. General styles
 ============================================================================= */
 
+/*custom css*/
+#gb-widget-1729 > div > a {
+  display: none;
+}
+
 html {
   position: relative;
   height: 100%;
