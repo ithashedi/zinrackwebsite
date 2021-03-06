@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="css/main.css" type="text/css">
 
     <script src="js/modernizr.custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+
   </head>
 
   <body>
@@ -132,9 +134,15 @@
                     <div class="col-sm-12 col-md-12 col-lg-12">
                         <div style="background-image: url(header-photo.png); background-size: cover; height: 753px;" class="inner-content d-flex align-items-center justify-content-center">
                          <!-- <div class="fill-block"></div>-->
-                         <div style="position: absolute;" id="header-text">
-                           <h1 style="font-size:75px; color:#fa9600; font-weight: bold;">We Drive Your <br> Business <span style="color:#45046a;">to Success</span><h1>
-                             
+                         <div style="position: absolute; width: 1000px;" id="header-text">
+                           <h1 style="font-size:75px; color:#fa9600; font-weight: bold;">We Drive Your <br> Business <span id="typewriter" style="color:#45046a;"></span><h1>
+                             <script>
+                               new TypeIt("#typewriter", {
+                                  strings: "to Success",
+                                  speed: 300,
+                                  loop: true
+                                }).go();
+                             </script>
                          </div>
                           
                         </div>
